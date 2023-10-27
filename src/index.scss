@@ -15,15 +15,7 @@ body {
 }
 
 .main{
-  text-transform: uppercase;
 
-  &__title{
-    text-align: center;
-  }
-
-  &__text{
-    text-transform: lowercase;
-  }
 }
 
 .react-logo{
@@ -43,5 +35,38 @@ body {
 
   &__list{
     font-size: 23px;
+  }
+}
+
+.header{
+  &__logo{
+    width: 55px;
+  }
+
+  &__nav{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    gap: 25px;
+  }
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 30%;
+  margin: 0 0 10px 0;
+
+  a{
+    color: beige;
+    text-decoration: none;
   }
 }
