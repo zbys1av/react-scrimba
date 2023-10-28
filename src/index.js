@@ -138,7 +138,7 @@ function Header(){
                     <li>button 3</li>
                 </ul>
             </nav>
-            <div className='header__background'></div>
+            {/* <div className='header__background'></div> */}
         </header>
     )
 }
