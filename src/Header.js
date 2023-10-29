@@ -9,9 +9,9 @@ function Header(){
             <nav className='header__nav'>
                 <img src={logo} width={50} className='header__logo' alt='logo'></img>
                 <ul className='header__list'>
-                    <li>button 1</li>
-                    <li>button 2</li>
-                    <li>button 3</li>
+                    <li>btn1</li>
+                    <li>btn2</li>
+                    <li>btn3</li>
                 </ul>
             </nav>
             {/* <div className='header__background'></div> */}
