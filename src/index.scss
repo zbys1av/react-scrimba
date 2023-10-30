@@ -7,58 +7,37 @@ body {
 }
 
 .container{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   max-width: 700px;
   margin: auto;
-  margin-top: 0;
+  margin-top: 10px;
   padding: 20px;
   padding-top: 6px;
   background-color: rgb(196, 196, 196);
   border-radius: 7px;
 }
 
-.main{
-  width: 100%;
-  color: black;
-}
-
-.react-logo{
-  width: 80px;
-}
-
-.facts{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-
-  &__title{
-    margin-bottom: 0;
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  &__list{
-    font-size: 23px;
-  }
-}
-
 .header{
-  color: #ffff;
-  text-transform: uppercase;
+  // color: #ffff;
+  // text-transform: uppercase;
   font-weight: bold;
 
   &__nav{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px 30px 10px 10px;
     background-color: rgba(27, 27, 27, 0.849);
     margin-top: 10px;
     border-radius: 10px;
-    border: 2px solid white;
-    // box-shadow: 0px 0px 5px 0px #0dd8d8;
   }
 
   &__logo{
-    width: 55px;
+    width: 40px;
+    height: 35px;
+    pointer-events: none;
   }
 
   &__list{
@@ -71,13 +50,49 @@ body {
   }
 }
 
+.main{
+  width: 100%;
+  // color: rgb(255, 255, 255);
+
+  &__list-section{
+    background-color: rgba(27, 27, 27, 0.849);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__title{
+    font-size: 25px;
+    text-align: center;
+  }
+
+  &__list{
+    font-size: 20px;
+    list-style: upper-roman;
+  }
+}
+
+.about{
+  &__box{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgba(27, 27, 27, 0.849);
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__image{
+    border-radius: 10px;
+    width: 430px;
+  }
+}
+
 .footer{
-  position: fixed;
-  bottom: 0;
   opacity: 30%;
+  color: rgb(36, 36, 36);
+  text-align: center;
 
   a{
-    color: beige;
     text-decoration: none;
   }
 }
