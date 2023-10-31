@@ -5,12 +5,14 @@ import logo from './images/react-icon.png';
 
 function Header(){
     return(
-        <header className='header'>
+        <header className='header section'>
             <nav className='header__nav'>
-                <img src={logo} width={50} className='header__logo' alt='logo'></img>
+                <div className="header__logo-section">
+                    <img src={logo} width={50} className='header__logo' alt='logo'></img>
+                    <p className="header__logo-text">React</p>
+                </div>
                 <ul className='header__list'>
-                    <li>Sign Up</li>
-                    <li>Sign In</li>
+                    <li>React Course (Scrimba)- Project 1</li>
                 </ul>
             </nav>
             {/* <div className='header__background'></div> */}

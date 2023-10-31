@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 function About(){
     return(
-        <div className='about'>
+        <div className='about section'>
             <div className='about__box'>
                 <img className='about__image' width={500} src="https://www.nortekgroup.com/assets/images/_1200x630_crop_center-center_82_none/Waves.jpg?mtime=1693993620"></img>
                 <p className='about__text'>Proin ac odio non nisl bibendum cursus. 

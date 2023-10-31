@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import reactLogo from './images/react-icon.png';
 
 function Main(){
     return(
-        <div className='main'>
+        <div className='main section'>
+            <img className='main__logo' src={reactLogo} alt='react logo' width={200}></img>
             <div className='main__list-section'>
                 <h3 className='main__title'>There should be some stupid list</h3>
                 <ul className='main__list'>

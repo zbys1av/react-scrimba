@@ -1,9 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Linefont:wght@100;200;300&display=swap');
+
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(15, 15, 15);
-  color: beige;
+  background-color: #000000;
+  color: #ffff;
   font-family: sans-serif;
+  // font-family: Linefont;
+}
+
+.section{
+  background-color: #1D1F23;
+  border-radius: 10px;
 }
 
 .container{
@@ -15,13 +23,10 @@ body {
   margin-top: 10px;
   padding: 20px;
   padding-top: 6px;
-  background-color: rgb(196, 196, 196);
   border-radius: 7px;
 }
 
 .header{
-  // color: #ffff;
-  // text-transform: uppercase;
   font-weight: bold;
 
   &__nav{
@@ -29,9 +34,6 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 30px 10px 10px;
-    background-color: rgba(27, 27, 27, 0.849);
-    margin-top: 10px;
-    border-radius: 10px;
   }
 
   &__logo{
@@ -40,24 +42,55 @@ body {
     pointer-events: none;
   }
 
+  &__logo-section{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__logo-text{
+    color: #61DBFB;
+    user-select: none;
+  }
+
   &__list{
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
     gap: 25px;
+    font-family: Linefont;
     cursor: pointer;
+
+    li{
+      transition: 0.5s;
+      
+      &:hover{
+        transition: 0.5s;
+        color: #61DBFB;
+      }
+    }
   }
 }
 
 .main{
   width: 100%;
-  // color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+
+  &__logo{
+    z-index: 0;
+    position: absolute;
+    right: -13%;
+    top: 8%;
+    opacity: 10%;
+    width: 300px;
+    filter: grayscale(100);
+    pointer-events: none;
+  }
 
   &__list-section{
-    background-color: rgba(27, 27, 27, 0.849);
     padding: 10px;
-    border-radius: 10px;
   }
 
   &__title{
@@ -67,7 +100,12 @@ body {
 
   &__list{
     font-size: 20px;
-    list-style: upper-roman;
+    list-style: none;
+
+    ::before{
+      content: '- ';
+      color: #61DBFB;
+    }
   }
 }
 
@@ -76,10 +114,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: rgba(27, 27, 27, 0.849);
-    padding: 10px;
-    border-radius: 10px;
-  }
+    padding: 10px;  }
 
   &__image{
     border-radius: 10px;
@@ -89,10 +124,17 @@ body {
 
 .footer{
   opacity: 30%;
-  color: rgb(36, 36, 36);
   text-align: center;
 
   a{
     text-decoration: none;
+    transition: 0.5s;
+    color: #ffff;
+    
+    &:hover{
+      transition: 0.5s;
+      color: #61DBFB;
+      opacity: 100%;
+    }
   }
 }
