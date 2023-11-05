@@ -1,7 +1,24 @@
 import React from "react"
 import ReactDOM from 'react-dom/client';
 
+const date = new Date();
+const hours = date.getHours();
+const minutes = date.getMinutes();
+let periodOfTheDay = "";
+
+const months = ["January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"]
+
 function Main(){
+    if (hours < 12){
+        periodOfTheDay = "morning";
+    } else if (hours >= 12 && hours <= 17){
+        periodOfTheDay = "afternoon";
+    } else {
+        periodOfTheDay = "night";
+    }
+
+
     return(
         <div className="main">
             <div className="main__box">
@@ -31,6 +48,11 @@ function Main(){
                     <p className="main__text">Join unique interactive activities led by 
                         one-of-a-kind hosts-all without leaving home.</p>
                 </div>
+                <p className="main__date">
+                    Good {periodOfTheDay} 😉 <br/>
+                    That is {hours}:{minutes} <br/>
+                    {months[date.getMonth()]} {date.getDate()}
+                </p>
             </div>
         </div>
     )
