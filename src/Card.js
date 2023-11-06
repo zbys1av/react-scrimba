@@ -2,10 +2,17 @@ import React from "react"
 import ReactDOM from 'react-dom/client';
 
 function Card(props){
+    let available = ""
+    if (props.available == false){
+        available = "Sold out";
+    } else {
+        available = "Available";
+    }
+
     return(
         <div className="cards__card">
             <div className="cards__picture-section">
-                <span className="cards__button">Sold out</span>
+                <span className="cards__button">{available}</span>
                 <img className="cards__picture" src={props.img} width={200}></img>
             </div>
             <div className="cards__text-section">

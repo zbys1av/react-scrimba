@@ -14,6 +14,7 @@ function Cards (){
                     country = "Canada"
                     info = "Zaza Jimbs"
                     price = "111"
+                    available = {true}
                 />
 
                 <Card
@@ -23,6 +24,7 @@ function Cards (){
                     country = "USA"
                     info = "Zara Viva"
                     price = "211"
+                    available = {false}
                 />
 
                 <Card
@@ -32,6 +34,7 @@ function Cards (){
                     country = "UK"
                     info = "Jiza Jiba"
                     price = "365"
+                    available = {true}
                 />
 
                 <Card
@@ -41,6 +44,7 @@ function Cards (){
                     country = "Kenya"
                     info = "Jeen White"
                     price = "15"
+                    available = {false}
                 />
                 {/* <div className="cards__card">
                     <div className="cards__picture-section">
