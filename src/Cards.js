@@ -2,12 +2,32 @@ import React from "react"
 import ReactDOM from 'react-dom/client';
 
 import Card from "./Card";
+import data from "./data";
+console.log(data)
 
 function Cards (){
+
+    const crds = data.map(item => {
+        return(
+            <Card
+                img = {item.img}    
+                raiting = {item.raiting}
+                reviews = {item.reviews}
+                country = {item.country}
+                info = {item.info}
+                price = {item.price}
+                available = {item.available}
+            />
+        )
+    })
+
     return(
         <div className="cards">
             <div className="cards__box">
-                <Card
+
+                {crds}
+
+                {/* <Card
                     img = "https://images.pexels.com/photos/12879014/pexels-photo-12879014.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"    
                     raiting = "4.7"
                     reviews = "29"
@@ -45,7 +65,9 @@ function Cards (){
                     info = "Jeen White"
                     price = "15"
                     available = {false}
-                />
+                /> */}
+
+
                 {/* <div className="cards__card">
                     <div className="cards__picture-section">
                         <span className="cards__button">Sold out</span>
