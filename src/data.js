@@ -10,7 +10,7 @@ export default [
         country: location[Math.floor(Math.random()*location.length)],
         info: "Zaza Jimbs",
         price: 111,
-        available: true,
+        available: 2,
     },
     {
         id: 2,
@@ -20,7 +20,7 @@ export default [
         country: location[Math.floor(Math.random()*location.length)],
         info: "Zara Viva",
         price: 211,
-        available: false,
+        available: 3,
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ export default [
         country: location[Math.floor(Math.random()*location.length)],
         info: "Zara Viva",
         price: 132,
-        available: false,
+        available: 0,
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ export default [
         country: location[Math.floor(Math.random()*location.length)],
         info: "Zara Viva",
         price: 411,
-        available: false,
+        available: 0,
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ export default [
         country: location[Math.floor(Math.random()*location.length)],
         info: "Vaza Vita",
         price: 231,
-        available: false,
+        available: 1,
     },
     {
         id: 6,
@@ -60,6 +60,6 @@ export default [
         country: location[Math.floor(Math.random()*location.length)],
         info: "Kava Black",
         price: 222,
-        available: true,
+        available: 2,
     }
 ]

@@ -10,13 +10,15 @@ function Cards (){
     const crds = data.map(item => {
         return(
             <Card
-                img = {item.img}    
-                raiting = {item.raiting}
-                reviews = {item.reviews}
-                country = {item.country}
-                info = {item.info}
-                price = {item.price}
-                available = {item.available}
+                key = {item.id}
+                item = {item}
+                // img = {item.img}    
+                // raiting = {item.raiting}
+                // reviews = {item.reviews}
+                // country = {item.country}
+                // info = {item.info}
+                // price = {item.price}
+                // available = {item.available}
             />
         )
     })
