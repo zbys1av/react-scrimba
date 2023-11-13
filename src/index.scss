@@ -148,3 +148,53 @@ body {
         }
     }
 }
+
+.counter{
+    &__box{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__title{
+        text-align: center;
+    }
+
+    &__count{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #234232;
+        padding: 25px;
+        font-size: 30px;
+        border-radius: 100px;
+        width: 50px;
+        height: 50px;
+        font-weight: bold;
+        user-select: none;
+    }
+
+    &__buttons{
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__action{
+        display: flex;
+        margin-top: -30px;
+        font-size: 17px;
+        font-weight: bold;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(167, 206, 41);
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+    }
+}
