@@ -5,12 +5,25 @@ import memeBase from "./memeBase";
 
 function Main(){
 
-    const [memeUrl, newMemeUrl] = useState(memeBase.data.memes[Math.floor(Math.random()*memeBase.data.memes.length)].url);
+    // const [memeUrl, newMemeUrl] = useState(memeBase.data.memes[Math.floor(Math.random()*memeBase.data.memes.length)].url);
+    const [memeUrl, newMemeUrl] = useState({
+        topText: "",
+        bottomText: "",
+        randomImage: (memeBase.data.memes[Math.floor(Math.random()*memeBase.data.memes.length)].url)
+    })
+    const [allMemeImages, setAllMemeImages] = useState(memeBase);
 
     function getImage(){
         const memesArray = memeBase.data.memes;
         const randomMeme = Math.floor(Math.random()*memesArray.length);
-        newMemeUrl(memesArray[randomMeme].url);
+        const memeLink = memesArray[randomMeme].url;
+        // newMemeUrl(memesArray[randomMeme].url);
+        newMemeUrl (meme => {
+            return{
+                ...meme,
+                randomImage: memeLink
+            }
+        })
     }
 
     return(
@@ -28,7 +41,7 @@ function Main(){
                 <button onClick={getImage} className="main__button">
                     Get meme. NEOW!
                 </button>
-                <img src={memeUrl} alr="meme" className="main__image">
+                <img src={memeUrl.randomImage} alr="meme" className="main__image">
                 </img>
 
 

@@ -6,6 +6,7 @@ import Header from './Header';
 import Main from './Main';
 import MiniTask from './MiniTask';
 import AddElements from './AddElement';
+import Card from './Card';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -16,6 +17,7 @@ function ReactPage(){
             <Main/>
             <MiniTask/>
             <AddElements/>
+            <Card/>
         </div>
     )
 }

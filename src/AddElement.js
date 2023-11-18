@@ -6,7 +6,7 @@ function AddElements(){
     const [itemArray, setItemArray] = useState(["Item 1", "Item 2"]);
 
     function addItem(){
-        setItemArray(item => [...item, `Item ${item.length + 1}`]);
+        setItemArray(item => [...item, `Item ${item.length + 1}`]); // ...item,___ takes all items of array + new item after ","
     }
 
     const element = itemArray.map(item => <p className="add__item" key={item}>{item}</p>)
