@@ -1,6 +1,8 @@
 import React, {useState} from "react"
 import ReactDOM from 'react-dom/client';
 
+import Star from "./Star";
+
 function Card(){
 
     const [contact, setContact] = useState({
@@ -36,7 +38,10 @@ function Card(){
             <div className="card__box">
                 <img className="card__image" width="160" src="https://cdn-icons-png.flaticon.com/512/219/219983.png"></img>
                 <div className="card__info">
-                    <img onClick={toggleFavourite} className="card__star" width="40" src={starIcon}></img>
+                    {/* <img onClick={toggleFavourite} className="card__star" width="40" src={starIcon}></img> */}
+
+                    <Star isFilled={contact.isFavorite} handleClick={toggleFavourite}/>         
+                    {/* handleClick is not an event listener there can be any name */}
                     <h3 className="card__contact card__contact--name">{contact.firstName} {contact.lastName}</h3>
                     <p className="card__contact card__contact--phone">{contact.phone}</p>
                     <p className="card__contact card__contact--email">{contact.email}</p>

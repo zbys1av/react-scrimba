@@ -7,6 +7,7 @@ import Main from './Main';
 import MiniTask from './MiniTask';
 import AddElements from './AddElement';
 import Card from './Card';
+import BoxArea from './BoxArea';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -15,9 +16,11 @@ function ReactPage(){
         <div className='container'>
             <Header/>
             <Main/>
-            <MiniTask/>
-            <AddElements/>
+            <h3>Additional tasks:</h3>
+            {/* <MiniTask/> */}
+            {/* <AddElements/> */}
             <Card/>
+            <BoxArea/>
         </div>
     )
 }

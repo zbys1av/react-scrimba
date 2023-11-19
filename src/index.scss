@@ -217,7 +217,7 @@ body {
 
         &:hover{
             transition: 0.3s;
-            box-shadow: 5px 5px 7px #6F4AAA;
+            box-shadow: 5px 5px 7px #b6b6b6;
         }
     }
 
@@ -253,5 +253,18 @@ body {
             font-size: 25px;
             font-weight: bold;
         }
+    }
+}
+
+.boxes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    &__box{
+        width: 50px;
+        height: 50px;
+        border: 3px solid #D7CAEE;
+        border-radius: 10px;
     }
 }
