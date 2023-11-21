@@ -19,7 +19,7 @@ function ReactPage(){
             <h3>Additional tasks:</h3>
             {/* <MiniTask/> */}
             {/* <AddElements/> */}
-            <Card/>
+            {/* <Card/> */}
             <BoxArea/>
         </div>
     )
