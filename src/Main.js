@@ -26,6 +26,16 @@ function Main(){
         })
     }
 
+    const [text, setText] = useState("NOW !")
+
+    function meow(){
+        if (text === "NOW !"){
+            setText ("MEOW!" )
+        } else {
+            setText("NOW !")
+        }
+    }
+
     return(
         <div className="main">
             <div className="main__box">
@@ -37,9 +47,8 @@ function Main(){
                 </div>
 
 
-
-                <button onClick={getImage} className="main__button">
-                    Get meme. NEOW!
+                <button onClick={getImage} onMouseEnter={meow} onMouseLeave={meow} className="main__button">
+                    Get meme. {text}
                 </button>
                 <img src={memeUrl.randomImage} alr="meme" className="main__image">
                 </img>

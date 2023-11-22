@@ -46,7 +46,7 @@ function BoxArea(props){
 
     const boxElement = item.map(box => (
         // <div style={boxStyle} className="boxes__box" key={box.id}>{box.id}</div>
-        <Box key={box.id} on={box.on} myId={box.id} id={box.id} toggle={toggleColor}/>
+        <Box key={box.id} on={box.on} myId={box.id} id={box.id} toggle={toggleColor} visible={box.id}/>
     ))
     
     return(

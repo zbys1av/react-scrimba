@@ -11,7 +11,8 @@ function Box(props){
         transition: "0.7s",
         color: "#ffffff",
         // backgroundColor: on ? "#6F4AAA" : "#D7CAEE"          //if use v1
-        backgroundColor: props.on ? "#6F4AAA" : "#D7CAEE"       //if use v2.2
+        backgroundColor: props.on ? "#6F4AAA" : "#D7CAEE",       //if use v2.2
+        visibility: props.visible % 2 !== 0 ? "hidden" : "visible"
     }
 
     function change(){              // version 1 - changes background color depending on "on" value
