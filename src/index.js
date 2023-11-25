@@ -8,6 +8,8 @@ import MiniTask from './MiniTask';
 import AddElements from './AddElement';
 import Card from './Card';
 import BoxArea from './BoxArea';
+import Joke from './Joke';
+import Jokes from './Jokes';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -20,6 +22,7 @@ function ReactPage(){
             {/* <MiniTask/> */}
             {/* <AddElements/> */}
             {/* <Card/> */}
+            <Jokes/>
             <BoxArea/>
         </div>
     )
