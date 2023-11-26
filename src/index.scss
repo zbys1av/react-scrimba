@@ -270,3 +270,57 @@ body {
         border-radius: 10px;
     }
 }
+
+.jokes{
+    display: flex;
+    background-color: #6F4AAA;
+    padding: 10px 5px;
+    border-radius: 10px;
+    justify-content: space-between;
+    // gap: 3px;
+    
+    &__box{
+        height: 150px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        max-width: 230px;
+        background-color: #D7CAEE;
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    &__setup{
+        margin: 0;
+    }
+
+    &__punchline-section{
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+    }
+
+    &__punchline{
+        margin: 0;
+        max-width: 215px;
+    }
+
+    &__button{
+        border-radius: 10px;
+        border: 1px solid transparent;
+        background-color: #6F4AAA;
+        color: #ffffff;
+        font-weight: bold;
+        transition: 0.5s;
+
+        &:hover{
+            transition: 0.5s;
+            // border: 1px solid #6F4AAA;
+            background-color: #6f4aaa8a;
+        }
+    }
+}
