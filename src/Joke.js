@@ -7,11 +7,11 @@ import Jokes from "./Jokes";
 function Joke(props){
 
     const [isShow, setIsShow] = useState(false)
-    const [buttonText, setButtonText] = useState("Show")
+    // const [buttonText, setButtonText] = useState("Show")
 
     function showLine(){
         setIsShow(show => !show);
-        setButtonText(text => text === "Show" ? text = "Hide" : text = "Show");
+        // setButtonText(text => text === "Show" ? text = "Hide" : text = "Show");
     }
 
     return (
@@ -20,7 +20,8 @@ function Joke(props){
                 {props.setup && <h3 className="jokes__setup">{props.setup}</h3>}
                 <div className="jokes__punchline-section">
                     {isShow ? <p className="jokes__punchline">{props.punchline}</p> : <p className="jokes__punchline jokes__punchline--hidden">Nothing is here</p>}
-                    <button onClick={showLine} className="jokes__button">{buttonText}</button>
+                    {/* <button onClick={showLine} className="jokes__button">{buttonText}</button> */}
+                    <button onClick={showLine} className="jokes__button">{isShow ? "Hide" : "Show"}</button>
                 </div>
             </div>
         </div>

@@ -10,6 +10,7 @@ import Card from './Card';
 import BoxArea from './BoxArea';
 import Joke from './Joke';
 import Jokes from './Jokes';
+import Message from './Message';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -22,8 +23,9 @@ function ReactPage(){
             {/* <MiniTask/> */}
             {/* <AddElements/> */}
             {/* <Card/> */}
+            {/* <BoxArea/> */}
             <Jokes/>
-            <BoxArea/>
+            <Message/>
         </div>
     )
 }

@@ -319,8 +319,18 @@ body {
 
         &:hover{
             transition: 0.5s;
-            // border: 1px solid #6F4AAA;
             background-color: #6f4aaa8a;
         }
+    }
+}
+
+.message{
+    &__box{
+        background-color: #6F4AAA;
+        padding: 4px 10px;
+        border-radius: 10px;
+        color: #ffffff;
+        font-weight: bold;
+        text-align:  center;
     }
 }
